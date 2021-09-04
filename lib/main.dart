@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:wallbay/Bloc/categoryWallpaperBloc.dart';
-import 'package:wallbay/Bloc/searchWallpaperBloc.dart';
-import 'package:wallbay/Bloc/wallpaperBloc.dart';
-import 'package:wallbay/Screens/HomePage.dart';
+import 'package:wallpapers/Bloc/categoryWallpaperBloc.dart';
+import 'package:wallpapers/Bloc/categoryWallpaperBloc.dart';
+import 'package:wallpapers/Bloc/searchWallpaperBloc.dart';
+import 'package:wallpapers/Bloc/wallpaperBloc.dart';
+import 'package:wallpapers/Screens/HomePage.dart';
 import 'package:flutter/services.dart';
 
 void main() {
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
           create: (context) => CategoryWallpaperBloc(),
           child: MaterialApp(
             debugShowCheckedModeBanner: false,
-            title: 'Wallbay',
+            title: 'Wallpaper',
             theme: ThemeData(
                 brightness: Brightness.light,
                 cardColor: Colors.white38,
@@ -51,7 +52,7 @@ class MyApp extends StatelessWidget {
             //     primaryColor: Colors.black,
             //     dialogBackgroundColor: Colors.black,
             //     cardColor: Colors.white38),
-            home: MyHomePage('Wallbay'),
+            home: MyHomePage('Wallpaper'),
           ),
         ),
       ),

@@ -2,12 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:wallbay/Bloc/wallpaperBloc.dart';
-import 'package:wallbay/Bloc/wallpaperEvent.dart';
-import 'package:wallbay/Screens/CategoryList.dart' as categoryScreen;
-import 'package:wallbay/Screens/EditorChoice.dart';
-import 'package:wallbay/Screens/Search.dart';
-import 'package:wallbay/Screens/Setting.dart';
+import 'package:wallpapers/Bloc/wallpaperBloc.dart';
+import 'package:wallpapers/Bloc/wallpaperEvent.dart';
+import 'package:wallpapers/Screens/CategoryList.dart' as categoryScreen;
+import 'package:wallpapers/Screens/EditorChoice.dart';
+import 'package:wallpapers/Screens/Search.dart';
+import 'package:wallpapers/Screens/Setting.dart';
 
 class MyHomePage extends StatefulWidget {
   final String title;

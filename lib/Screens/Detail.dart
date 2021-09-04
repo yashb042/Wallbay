@@ -4,7 +4,7 @@ import 'package:dio/dio.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:getwidget/components/button/gf_button.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:wallbay/Model/wallpaper.dart';
+import 'package:wallpapers/Model/wallpaper.dart';
 import 'package:flutter/services.dart';
 import 'package:easy_permission_validator/easy_permission_validator.dart';
 import 'package:wallpaper_manager/wallpaper_manager.dart';
@@ -26,7 +26,7 @@ class _DetailState extends State<Detail> {
   _permissionRequest() async {
     final permissionValidator = EasyPermissionValidator(
       context: context,
-      appName: 'Wallbay',
+      appName: 'Wallpaper',
     );
     var result = await permissionValidator.storage();
     if (result) {

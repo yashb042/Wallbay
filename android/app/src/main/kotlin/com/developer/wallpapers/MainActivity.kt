@@ -1,4 +1,4 @@
-package com.tsvillain.wallbay
+package com.developer.wallpapers
 import io.flutter.embedding.android.FlutterActivity;
 
 class MainActivity: FlutterActivity() {
