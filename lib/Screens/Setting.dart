@@ -4,6 +4,8 @@ import 'package:share/share.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:wallpapers/const.dart';
 
+import '../InterstitialNew.dart';
+
 class Setting extends StatefulWidget {
   @override
   _SettingState createState() => _SettingState();
@@ -18,11 +20,13 @@ class _SettingState extends State<Setting> {
       _packageName = packageInfo.packageName;
       _version = packageInfo.version;
     });
+    InterstitialNew.loadInterstitialAdInternal();
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
+    InterstitialNew.showInterstitialAd();
     return Scaffold(
       appBar: AppBar(
         title: Text("About"),

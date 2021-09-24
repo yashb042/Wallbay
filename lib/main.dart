@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:wallpapers/Bloc/categoryWallpaperBloc.dart';
 import 'package:wallpapers/Bloc/categoryWallpaperBloc.dart';
 import 'package:wallpapers/Bloc/searchWallpaperBloc.dart';
@@ -8,6 +9,8 @@ import 'package:wallpapers/Screens/HomePage.dart';
 import 'package:flutter/services.dart';
 
 void main() {
+
+
   WidgetsFlutterBinding.ensureInitialized();
 
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark.copyWith(
@@ -19,7 +22,13 @@ void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
@@ -57,5 +66,10 @@ class MyApp extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  @override
+  void initState() {
+    MobileAds.instance.initialize();
   }
 }
