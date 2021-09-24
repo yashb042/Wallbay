@@ -8,6 +8,7 @@ import 'package:wallpapers/Screens/CategoryList.dart' as categoryScreen;
 import 'package:wallpapers/Screens/EditorChoice.dart';
 import 'package:wallpapers/Screens/Search.dart';
 import 'package:wallpapers/Screens/Setting.dart';
+import 'package:wallpapers/ads.dart';
 
 class MyHomePage extends StatefulWidget {
   final String title;
@@ -71,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
             icon: Icon(Icons.info_outline),
             onPressed: () {
               Navigator.push(
-                  context, CupertinoPageRoute(builder: (context) => Setting()));
+                  context, CupertinoPageRoute(builder: (context) => MyMaterialApp()));
             },
           )
         ],

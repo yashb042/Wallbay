@@ -5,9 +5,11 @@ import 'package:wallpapers/Bloc/categoryWallpaperBloc.dart';
 import 'package:wallpapers/Bloc/searchWallpaperBloc.dart';
 import 'package:wallpapers/Bloc/wallpaperBloc.dart';
 import 'package:wallpapers/Screens/HomePage.dart';
+import 'package:admob_flutter/admob_flutter.dart';
 import 'package:flutter/services.dart';
 
 void main() {
+  Admob.initialize();
   WidgetsFlutterBinding.ensureInitialized();
 
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark.copyWith(
